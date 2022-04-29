@@ -1,0 +1,16 @@
+extends CanvasLayer
+
+var new_scene: String
+
+onready var animation_player: AnimationPlayer = get_node("AnimationPlayer")
+
+func start_transition_to(path_to_scene: String) -> void:
+	new_scene = path_to_scene
+	animation_player.play("scene_change_anim")
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	pass # Replace with function body.
+
+func change_scene() -> void:
+	assert(get_tree().change_scene(new_scene) == OK)
