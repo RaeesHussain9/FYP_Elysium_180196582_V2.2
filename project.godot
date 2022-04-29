@@ -44,7 +44,7 @@ _global_script_class_icons={
 
 [application]
 
-config/name="FYP-Elysium-180196582"
+config/name="FYP-Elysium-180196582_v2.2"
 run/main_scene="res://Menus/StartMenuUI/StarMenu.tscn"
 config/icon="res://icon.png"
 

@@ -4,6 +4,8 @@ const max_Distance_To_Player: int = 80
 const min_Distance_To_Player: int = 40
 const Throwing_Knife_Scene: PackedScene = preload("res://Characters/Enemies/Gremlin/ThrowingKnife.tscn")
 
+const Throwing_Knife_2_Scene: PackedScene = preload("res://Characters/Enemies/Gremlin/ThrowingKnife2.tscn")
+
 var distance_to_player: float 
 
 export(int) var projectile_velocity: int = 150

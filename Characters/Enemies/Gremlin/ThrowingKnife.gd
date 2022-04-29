@@ -23,13 +23,11 @@ func _physics_process(delta: float) -> void:
 
 
 func _on_ThrowingKnife_body_exited(_body: KinematicBody2D) -> void:
-	print("method works")
 	if not enemy_exited:
 		enemy_exited = true
 		set_collision_mask_bit(0,true)
 		set_collision_mask_bit(1,true)
 		set_collision_mask_bit(2,false)
-		print("enemy exited")
 
 func _collide(body: KinematicBody2D) -> void:
 	if enemy_exited == true:

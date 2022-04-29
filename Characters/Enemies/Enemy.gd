@@ -13,7 +13,7 @@ onready var equipped_weapon: Node2D = get_tree().current_scene.get_node("Player/
 
 
 var normal_damage: int = 2
-var crit_damage: int = 3
+var crit_damage: int = 5
 var weakend_damage: int = 1
 
 func chase() -> void:
@@ -35,17 +35,17 @@ func chase() -> void:
 func take_damage(_dam: int, dir: Vector2, force: int) -> void:
 	if player.weapons.get_child(0) == player.equipped_weapon:
 		if has_node("blue") == true:
-			.take_damage(weakend_damage, dir, force)
+			.take_damage(weakend_damage, dir, force/3)
 		elif has_node("green") == true:
 			.take_damage(crit_damage, dir, force)
 		elif has_node("red") == true:
-			.take_damage(normal_damage, dir, force)
+			.take_damage(normal_damage, dir, force/1.5)
 
 	elif player.weapons.get_child(1) == player.equipped_weapon:
 		if has_node("blue") == true:
-			.take_damage(normal_damage, dir, force)
+			.take_damage(normal_damage, dir, force/1.5)
 		elif has_node("green") == true:
-			.take_damage(weakend_damage, dir, force)
+			.take_damage(weakend_damage, dir, force/3)
 		elif has_node("red") == true:
 			.take_damage(crit_damage, dir, force)
 
@@ -53,9 +53,9 @@ func take_damage(_dam: int, dir: Vector2, force: int) -> void:
 		if has_node("blue") == true:
 			.take_damage(crit_damage, dir, force)
 		elif has_node("green") == true:
-			.take_damage(normal_damage, dir, force)
+			.take_damage(normal_damage, dir, force/1.5)
 		elif has_node("red") == true:
-			.take_damage(weakend_damage, dir, force)
+			.take_damage(weakend_damage, dir, force/3)
 
 func _on_PathTimer_timeout() -> void:
 	if is_instance_valid(player):

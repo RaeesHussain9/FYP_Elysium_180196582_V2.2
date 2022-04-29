@@ -24,9 +24,6 @@ export(int) var num_levels: int = 0
 
 func _ready() -> void:
 	num_enemies = enemy_positions_container.get_child_count()
-	SavedData.num_levels += 1
-	num_levels += 1
-	print("Game num levels = " + str(num_levels))
 	
 func _on_enemy_killed() -> void:
 	num_enemies -= 1

@@ -9,4 +9,4 @@ func _ready():
 
 func _on_Stairs_body_entered(_body: KinematicBody2D):
 	collison_shape.set_deferred("disabled", true)
-	SceneChanger.start_transition_to("res://Scenes/DungeonFloors/Level4.tscn")
+	get_tree().change_scene("res://Scenes/DungeonFloors/Level4.tscn")

@@ -13,7 +13,7 @@ func _init() -> void:
 
 
 func _on_Start_pressed():
-	SceneChanger.start_transition_to("res://Scenes/DungeonFloors/Game.tscn")
+	get_tree().change_scene("res://Scenes/DungeonFloors/Game.tscn")
 
 
 func _on_ExitButton_pressed():

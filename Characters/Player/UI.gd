@@ -1,6 +1,6 @@
 extends CanvasLayer
 
-const min_health: int = 23
+const min_health: int = 0
 
 var max_hp: int = 4
 

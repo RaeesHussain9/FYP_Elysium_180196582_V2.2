@@ -1,7 +1,7 @@
 [gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Scenes/DungeonFloors/Game.gd" type="Script" id=1]
-[ext_resource path="res://Art/v1.1 dungeon crawler 16x16 pixel pack/ui (new)/health_ui.png" type="Texture" id=2]
+[ext_resource path="res://Art/heart.png" type="Texture" id=2]
 [ext_resource path="res://Art/progress bar.png" type="Texture" id=3]
 [ext_resource path="res://Characters/Player/UI.gd" type="Script" id=4]
 [ext_resource path="res://Scenes/Floors/Floor_5.tscn" type="PackedScene" id=5]
@@ -17,9 +17,9 @@ script = ExtResource( 4 )
 anchor_right = 10.0
 margin_left = 10.0
 margin_top = 10.0
-margin_right = -4720.0
-margin_bottom = 16.0
-value = 50.0
+margin_right = -4710.0
+margin_bottom = 26.0
+value = 100.0
 texture_over = ExtResource( 2 )
 texture_progress = ExtResource( 3 )
 tint_progress = Color( 0.729412, 0.0235294, 0.0235294, 1 )

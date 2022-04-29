@@ -11,7 +11,7 @@ func _init() -> void:
 	OS.set_window_position(screen_size * 0.5 - window_size * 0.5)
 
 func _on_RetryButton_pressed():
-	SceneChanger.start_transition_to("res://Scenes/DungeonFloors/Game.tscn")
+	get_tree().change_scene("res://Scenes/DungeonFloors/Game.tscn")
 
 
 func _on_Start_pressed():
